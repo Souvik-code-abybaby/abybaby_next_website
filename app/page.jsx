@@ -2,6 +2,7 @@
 import Image from "next/image";
 import { StoriesCarousel } from "./components/home/StoriesCarousel";
 import FeedWithInfiniteScroll from "./components/home/FeedWithInfiniteScroll";
+import { StoryViewer } from "./components/home/StoryViewer";
 import { clients } from "../public/home/home";
 import logo from "../public/assets/images/logo.webp";
 import { useState } from "react";
@@ -19,6 +20,13 @@ export default function Home() {
         logo={logo}
         isFeedPaused={activeStory !== null}
       />
+       {activeStory !== null && (
+        <StoryViewer
+          clients={clients}
+          activeClientId={activeStory}
+          onClose={() => setActiveStory(null)}
+        />
+      )}
     </>
   );
 }
