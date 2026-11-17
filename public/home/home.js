@@ -1,0 +1,1373 @@
+
+import dtlogo from "../../public/assets/images/clientlogo/toyota.webp";
+import durgaPujaLogo from "../../public/assets/images/clientlogo/durgaPuja.webp";
+import ganeshChaturthiLogo from "../../public/assets/images/clientlogo/ganeshChaturthi.webp";
+import arunlogo from "../../public/assets/images/clientlogo/arun.webp";
+import mialogo from "../../public/assets/images/clientlogo/miaByTanishq.webp";
+import toyotalogo from "../../public/assets/images/clientlogo/toyota.webp";
+import miavdo1 from "../../public/assets/images/mia/miavdo1.MP4";
+import miavdo2 from "../../public/assets/images/mia/miavdo2.MP4";
+import miavdo3 from "../../public/assets/images/mia/miavdo3.MP4";
+import dtvdo1 from "../../public/assets/images/drumtao/dtvdo1.mp4";
+import toyotaDrumTaoVdo from "../../public/assets/images/drumtao/Toyota_Drum_Tao_Kolkata.mp4";
+import arunIceCreamVdo from "../../public/assets/images/arun/Arun_Ice_Cream.mp4";
+import dp1 from "../../public/assets/images/durgapuja/dp1.MP4";
+import dp2 from "../../public/assets/images/durgapuja/dp2.MP4";
+import dp3 from "../../public/assets/images/durgapuja/dp3.MP4";
+import tatacromalogo from "../../public/assets/images/clientlogo/tataMotors.webp";
+import tatacromavdo1 from "../../public/assets/images/tatacroma/tatacromavdo1.MP4";
+import tatacromavdo2 from "../../public/assets/images/tatacroma/tatacromavdo2.MP4";
+import kangarookidsLogo from "../../public/assets/images/kangarookids/kangarookidslogo.webp";
+import kangarookidsvdo1 from "../../public/assets/images/kangarookids/kangarookidsvdo1.MP4";
+import kangarookidsvdo2 from "../../public/assets/images/kangarookids/kangarookidsvdo2.MP4";
+import dplogo from "../../public/assets/images/durgapuja/durgapujalogo.webp";
+import titaneyelogo from "../../public/assets/images/clientlogo/titanEyePlus.webp";
+import titaneye1 from "../../public/assets/images/titaneyeplus/titaneye1.webp";
+import titaneye2 from "../../public/assets/images/titaneyeplus/titaneye2.webp";
+import titaneye3 from "../../public/assets/images/titaneyeplus/titaneye3.webp";
+import titaneye4 from "../../public/assets/images/titaneyeplus/titaneye4.webp";
+import herologo from "../../public/assets/images/clientlogo/hero.webp";
+import volvologo from "../../public/assets/images/clientlogo/volvo.webp";
+import khadimlogo from "../../public/assets/images/khadims/khadimslogo.webp";
+import khadims1 from "../../public/assets/images/khadims/khadims1.webp";
+import khadims2 from "../../public/assets/images/khadims/khadims2.webp";
+import khadims3 from "../../public/assets/images/khadims/khadims3.webp";
+import toyotazerovdo from "../../public/assets/images/zira/toyotaZeroVdo.mp4";
+import tatabandhanvdo from "../../public/assets/images/tatabandhan/tatabandhan.mp4";
+import tatabandhanlogo from "../../public/assets/images/clientlogo/tataMotors.webp";
+import flipkatFloatCampaign from "../../public/assets/images/flipkart/Flipkart's_float_campaign.mp4";
+import flipkartLogo from "../../public/assets/images/flipkart/flipkartLogo.webp";
+import mercedesLogo from "../../public/assets/images/clientlogo/marcedes.webp";
+import mercedesVdo from "../../public/assets/images/merecedes/mercedesVdo.mp4";
+import volvoSkillContestVdo from "../../public/assets/images/volvo/Volvo_Skill_Contest_2025.mp4";
+import mercedesBenVdo from "../../public/assets/images/mercedes_benz/Mercedez_Benz_Mobile_Service_Bengaluru.mp4";
+import maxfashionVdo from "../../public/assets/images/maxFashion/maxFashion.mp4";
+import maxfashionLogo from "../../public/assets/images/clientlogo/max.webp";
+
+import toyotaSupplierMeetVdo from "../../public/assets/images/toyotaSupplierMeet/Toyota_Supplier_Meet.mp4";
+import tataYoddhaVdo from "../../public/assets/images/tataYoddha/Tata_Yoddha.mp4";
+import sonpurMela1 from "../../public/assets/images/sonpurMela/sonpurMela1.webp";
+import mahindraLogo from "../../public/assets/images/clientlogo/mahindra.webp";
+import volvoImage from "../../public/assets/images/volvo/volvoImage.webp";
+import mercedesServiceClinicImage from "../../public/assets/images/merecedes/mercedesServiceClinic.webp";
+import tataBandhanImage from "../../public/assets/images/tatabandhan/tataBandhan.webp";
+import maxFashionImage from "../../public/assets/images/maxFashion/maxFashion.webp";
+import tataYoddhaImage from "../../public/assets/images/tataYoddha/tataYoddha.webp";
+import mercedesBenzMobileLaunch from "../../public/assets/images/mercedes_benz/mercedesBenzMobileLaunch.webp";
+import toyotaSupplierMeet from "../../public/assets/images/toyotaSupplierMeet/toyotaSupplierMeet.webp";
+import flipkartPoster from "../../public/assets/images/flipkart/flipkartPoster.webp";
+import vodafoneLogo from "../../public/assets/images/clientlogo/vodafone.webp";
+import hurdleHawkVdo from "../../public/assets/images/hurdle_hawk/hurdleHawkVdo.mp4";
+import hurdle_Hawk1 from "../../public/assets/images/hurdle_hawk/hurdle_hawk1.webp";
+import hurdleHawkLogo from "../../public/assets/images/clientlogo/hurdleHawk.webp";
+import amazonVdo from "../../public/assets/images/amazon/amazon.mp4";
+import mahindraFootballLeagueVdo from "../../public/assets/images/mahindraFootballLeague/mahindraFootballLeagueVdo.mp4";
+import agomoniVodafone from "../../public/assets/images/agomoni/agomoniVodafone.mp4";
+
+import heroVoiceOfDestinyVdo from "../../public/assets/images/heroVoiceOfDestiny/heroVoiceOfDestiny.mp4";
+// import amazonVdo from "../../public/assets/images/amazon/amazon.mp4";
+import sonpurMelaVdo from "../../public/assets/images/sonpurMela/sonpurMela.mp4";
+import heroSalesCarnivalVdo from "../../public/assets/images/heroSalesCarnival/heroSalesCarnival.mp4";
+import agomoni1 from "../../public/assets/images/agomoni/agomoni1.webp";
+import amazonLogo from "../../public/assets/images/clientlogo/amazon.webp";
+import agomoni5 from "../../public/assets/images/agomoni/agomoni5.webp";
+import durgaPuja1 from "../../public/assets/images/durgapuja/durgaPuja1.webp";
+import ganeshChaturthi1 from "../../public/assets/images/ganeshChaturthi/ganeshChaturthi.webp";
+export const clients = [
+  {
+    id: 1,
+    name: "Toyota Drum Tao",
+    initials: toyotalogo,
+    color: "#FF6B6B",
+    bgColor: "#FFE8E8",
+    seen: false,
+    category: "Event",
+    location: "Kolkata,India",
+    stories: [
+      {
+        type: "video",
+        url: dtvdo,
+        poster: dt4,
+      },
+      {
+        type: "image",
+        url: dt3,
+      },
+      {
+        type: "image",
+        url: dt4,
+      },
+      {
+        type: "image",
+        url: dt5,
+      },
+    ],
+  },
+  {
+    id: 2,
+    name: "Arun",
+    initials: arunlogo,
+    color: "#4ECDC4",
+    bgColor: "#E0F7F6",
+    seen: true,
+    category: "Launch",
+    location: "Hyderabad,India",
+    stories: [
+      {
+        type: "image",
+        url: arun,
+      },
+      {
+        type: "image",
+        url: arun2,
+      },
+      {
+        type: "image",
+        url: arun3,
+      },
+      {
+        type: "image",
+        url: arun4,
+      },
+      {
+        type: "image",
+        url: arun5,
+      },
+      {
+        type: "image",
+        url: arun6,
+      },
+    ],
+  },
+  {
+    id: 3,
+    name: "Mia by tanishq",
+    initials: mialogo,
+    color: "#45B7D1",
+    bgColor: "#E0F4FA",
+    seen: false,
+    category: "Store Activation",
+    location: "Guwahati,India",
+    stories: [
+      {
+        type: "video",
+        url: miavdo3,
+        poster: mia1,
+      },
+      {
+        type: "image",
+        url: mia2,
+      },
+      {
+        type: "video",
+        url: miavdo1,
+      },
+      {
+        type: "image",
+        url: mia4,
+      },
+      {
+        type: "image",
+        url: mia1,
+      },
+    ],
+  },
+  {
+    id: 4,
+    name: "Toyota Ziro",
+    initials: toyotalogo,
+    color: "#A78BFA",
+    bgColor: "#EDE9FE",
+    seen: true,
+    category: "Concert",
+    location: "Arunachal Pradesh,India",
+    stories: [
+      {
+        type: "video",
+        url: toyotazerovdo,
+        poster: dt2,
+      },
+    ],
+  },
+  {
+    id: 5,
+    name: "Flipkart",
+    initials: flipkartLogo,
+    color: "#FF6B6B",
+    bgColor: "#FFE8E8",
+    seen: false,
+    category: "Activation",
+    location: "Odisha,India",
+    stories: [
+      {
+        type: "video",
+        url: flipkatFloatCampaign,
+        poster: flipkartPoster,
+      },
+    ],
+  },
+
+  {
+    id: 6,
+    name: "Volvo  ",
+    initials: volvologo,
+    color: "#4ECDC4",
+    bgColor: "#E0F7F6",
+    seen: true,
+    category: "Activation",
+    location: "Bengaluru,India",
+    stories: [
+      {
+        type: "video",
+        url: volvoSkillContestVdo,
+        poster: volvoImage,
+      },
+    ],
+  },
+  {
+    id: 7,
+    name: "Titan Eye+",
+    initials: titaneyelogo,
+    color: "#45B7D1",
+    bgColor: "#E0F4FA",
+    seen: false,
+    category: "Activation",
+    location: "Vijaywada,India",
+    stories: [
+      {
+        type: "image",
+        url: titaneye1,
+      },
+      {
+        type: "image",
+        url: titaneye2,
+      },
+    ],
+  },
+
+  // {
+  //   id: 8,
+  //   name: "Volvo",
+  //   initials: volvologo,
+  //   color: "#FF6B6B",
+  //   bgColor: "#FFE8E8",
+  //   seen: false,
+  //   category: "Activation",
+  //   location: "Bengaluru,India",
+  //   stories: [
+  //     {
+  //       type: "video",
+  //       url: volvoSkillContestVdo,
+  //     },
+  //   ],
+  // },
+  {
+    id: 8,
+    name: " Mercedes  ",
+    initials: mercedesLogo,
+    color: "#4ECDC4",
+    bgColor: "#E0F7F6",
+    seen: true,
+    category: "Launch",
+    location: " Bengaluru, India",
+    stories: [
+      {
+        type: "video",
+        url: mercedesVdo,
+        poster: mercedesServiceClinicImage,
+      },
+    ],
+  },
+  // {
+  //   id: 11,
+  //   name: "Mia by tanishq",
+  //   initials: mialogo,
+  //   color: "#45B7D1",
+  //   bgColor: "#E0F4FA",
+  //   seen: false,
+  //   category: "Brand Promotion",
+  //   location: "Guwahati,India",
+  //   stories: [
+  //     {
+  //       type: "image",
+  //       url: mia1,
+  //     },
+  //     {
+  //       type: "image",
+  //       url: mia2,
+  //     },
+  //     {
+  //       type: "image",
+  //       url: mia3,
+  //     },
+  //     {
+  //       type: "image",
+  //       url: mia4,
+  //     },
+  //     {
+  //       type: "image",
+  //       url: mia1,
+  //     },
+  //   ],
+  // },
+  {
+    id: 9,
+    name: "Tata Bandhan",
+    initials: tatabandhanlogo,
+    color: "#A78BFA",
+    bgColor: "#EDE9FE",
+    seen: true,
+    category: "Conference",
+    location: "Jamshedpur & Jharkhand,India",
+    stories: [
+      {
+        type: "video",
+        url: tatabandhanvdo,
+        poster: tataBandhanImage,
+      },
+    ],
+  },
+  // {
+  //   id: 13,
+  //   name: "Kangaroo Kids",
+  //   initials: kangarookidsLogo,
+  //   color: "#FF6B6B",
+  //   bgColor: "#FFE8E8",
+  //   seen: true,
+  //   category: "Educational Promotion",
+  //   location: "Kolkata,West Bengal",
+  //   stories: [
+  //     {
+  //       type: "video",
+  //       url: kangarookidsvdo1,
+  //       poster: kangarookidsLogo,
+  //     },
+  //     {
+  //       type: "video",
+  //       url: kangarookidsvdo2,
+  //       poster: kangarookidsLogo,
+  //     },
+  //   ],
+  // },
+  {
+    id: 10,
+    name: "Mercedes Benz ",
+    initials: mercedesLogo,
+    color: "#FF6B6B",
+    bgColor: "#FFE8E8",
+    seen: true,
+    category: "Launch",
+    location: "Bengaluru,India",
+    stories: [
+      {
+        type: "video",
+        url: mercedesBenVdo,
+        poster: mercedesBenzMobileLaunch,
+      },
+    ],
+  },
+  {
+    id: 11,
+    name: "Tata Yoddha",
+    initials: tatabandhanlogo,
+    color: "#FF6B6B",
+    bgColor: "#FFE8E8",
+    seen: true,
+    category: "Activation",
+    location: "Meghalaya,India",
+    stories: [
+      {
+        type: "video",
+        url: tataYoddhaVdo,
+        poster: tataYoddhaImage,
+      },
+    ],
+  },
+  {
+    id: 12,
+    name: "Toyota ",
+    initials: toyotalogo,
+    color: "#FF6B6B",
+    bgColor: "#FFE8E8",
+    seen: true,
+    category: "Conference",
+    location: "Bengaluru,India",
+    stories: [
+      {
+        type: "video",
+        url: toyotaSupplierMeetVdo,
+        poster: toyotaSupplierMeet,
+      },
+    ],
+  },
+  {
+    id: 13,
+    name: "Max Fashion ",
+    initials: maxfashionLogo,
+    color: "#FF6B6B",
+    bgColor: "#FFE8E8",
+    seen: true,
+    category: "Exhibition",
+    location: "Hyderabad,Telengana",
+    stories: [
+      {
+        type: "video",
+        url: maxfashionVdo,
+        poster: maxFashionImage,
+      },
+    ],
+  },
+  {
+    id: 14,
+    name: "Hurdle Hawk",
+    initials: hurdleHawkLogo,
+    color: "#FF6B6B",
+    bgColor: "#FFE8E8",
+    seen: true,
+    category: "Sports Event",
+    location: "Kolkata,West Bengal",
+    stories: [
+      {
+        type: "video",
+        url: hurdleHawkVdo,
+        poster: hurdle_Hawk1,
+      },
+    ],
+  },
+  {
+    id: 15,
+    name: "Vodafone",
+    initials: vodafoneLogo,
+    color: "#FF6B6B",
+    bgColor: "#FFE8E8",
+    seen: true,
+    category: "Event",
+    location: "Kolkata,West Bengal",
+    stories: [
+      {
+        type: "video",
+        url: agomoniVodafone,
+        poster: agomoni5,
+      },
+    ],
+  },
+  {
+    id: 16,
+    name: "Mahindra",
+    initials: mahindraLogo,
+    color: "#FF6B6B",
+    bgColor: "#FFE8E8",
+    seen: true,
+    category: "Sports Event",
+    location: "West Bengal & North East,India",
+    stories: [
+      {
+        type: "video",
+        url: mahindraFootballLeagueVdo,
+        poster: mahindraLogo,
+      },
+    ],
+  },
+  {
+    id: 17,
+    name: "Hero",
+    initials: herologo,
+    color: "#FF6B6B",
+    bgColor: "#FFE8E8",
+    seen: true,
+    category: "Activation",
+    location: "Bihar,India",
+    stories: [
+      {
+        type: "video",
+        url: heroSalesCarnivalVdo,
+        poster: herologo,
+      },
+    ],
+  },
+  {
+    id: 18,
+    name: "Hero",
+    initials: herologo,
+    color: "#FF6B6B",
+    bgColor: "#FFE8E8",
+    seen: true,
+    category: "Activation",
+    location: "Assam & North East,India",
+    stories: [
+      {
+        type: "video",
+        url: heroVoiceOfDestinyVdo,
+        poster: herologo,
+      },
+    ],
+  },
+  {
+    id: 19,
+    name: "Hero",
+    initials: amazonLogo,
+    color: "#FF6B6B",
+    bgColor: "#FFE8E8",
+    seen: true,
+    category: "Activation",
+    location: "Kolkata,West Bengal",
+    stories: [
+      {
+        type: "video",
+        url: amazonVdo,
+        poster: amazonLogo,
+      },
+    ],
+  },
+  {
+    id: 20,
+    name: "Mahindra",
+    initials: mahindraLogo,
+    color: "#FF6B6B",
+    bgColor: "#FFE8E8",
+    seen: true,
+    category: "Activation",
+    location: "Sonpur,Bihar",
+    stories: [
+      {
+        type: "video",
+        url: sonpurMelaVdo,
+        poster: sonpurMela1,
+      },
+    ],
+  },
+];
+import dt2 from "../../public/assets/images/drumtao/dt2.webp"
+import arun2 from "../../public/assets/images/arun/arun2.webp";
+import dt3 from "../../public/assets/images/drumtao/dt3.webp";
+import dt4 from "../../public/assets/images/drumtao/dt4.webp";
+import dt5 from "../../public/assets/images/drumtao/dt5.webp";
+import arun from "../../public/assets/images/arun/arun.webp";
+
+import arun3 from "../../public/assets/images/arun/arun3.webp";
+import arun4 from "../../public/assets/images/arun/arun4.webp";
+import arun5 from "../../public/assets/images/arun/arun5.webp";
+import arun6 from "../../public/assets/images/arun/arun6.webp";
+import mia1 from "../../public/assets/images/mia/mia1.webp";
+import mia2 from "../../public/assets/images/mia/mia2.webp";
+import mia3 from "../../public/assets/images/mia/mia3.webp";
+import mia4 from "../../public/assets/images/mia/mia4.webp";
+import zira1 from "../../public/assets/images/zira/zira1.webp";
+import zira2 from "../../public/assets/images/zira/zira2.webp";
+import zira3 from "../../public/assets/images/zira/zira3.webp";
+import zira4 from "../../public/assets/images/zira/zira4.webp";
+import dtvdo from "../../public/assets/images/drumtao/dtvdo.mp4";
+import arunvdo from "../../public/assets/images/arun/arunvdo.mp4";
+import miavdo from "../../public/assets/images/mia/miavdo.mp4";
+import ziravdo from "../../public/assets/images/zira/ziravdo.mp4";
+
+export const feedPosts = [
+  {
+    id: 1,
+    client: clients[0],
+    location: "Kolkata,India",
+    name: "Feel The Awesome Beat – Drum Tao Live, Presented by Toyota",
+    category: "Event",
+    media: [
+      { type: "video", url: toyotaDrumTaoVdo, poster: dt2 },
+
+      { type: "image", url: dt4 },
+      { type: "image", url: dt5 },
+    ],
+    likes: 847,
+    caption:
+      "A historic night as Drum Tao performed live in Kolkata for the first time, backed by soulful vocals from Madhubanti Bagchi and energetic college bands. Kolkata didn't just hear the beat — it felt it.",
+    comments: [
+      {
+        id: 1,
+        author: "Sarah M.",
+        text: "Absolutely stunning! The venue transformation was breathtaking.",
+        time: "2h",
+      },
+      {
+        id: 2,
+        author: "Khalid A.",
+        text: "ABY never disappoints. Best event company in the region.",
+        time: "4h",
+      },
+      {
+        id: 3,
+        author: "Priya R.",
+        text: "Those floral installations were iconic!",
+        time: "6h",
+      },
+    ],
+
+    date: "June 3, 2026",
+  },
+  {
+    id: 18,
+    client: clients[18],
+    name: "Amazon Great Indian Festival",
+    location: "Kolkata,India",
+    category: "Activation",
+    media: [{ type: "video", url: amazonVdo, poster: amazonLogo }],
+    likes: 1000,
+    caption:
+      "On September 22, 2025, Park Circus Maidan in Kolkata played host to a spectacular drone show. The event, organized by Abybaby Events in partnership with tech provider Botlab Dynamics, featured thousands of drones lighting up the sky to mark the start of the festive season and celebrate the launch of the Amazon Great Indian Festival.",
+    comments: [
+      {
+        id: 1,
+        author: "Layla S.",
+        text: "This is literally my dream event! 😍",
+        time: "3d",
+      },
+      {
+        id: 2,
+        author: "Aisha M.",
+        text: "Can you do my event next? Perfection.",
+        time: "3d",
+      },
+      {
+        id: 3,
+        author: "Nour J.",
+        text: "The floral arch alone is iconic.",
+        time: "4d",
+      },
+      {
+        id: 4,
+        author: "Hessa A.",
+        text: "I was there! Even better in person.",
+        time: "4d",
+      },
+    ],
+
+    date: "May 15, 2026",
+  },
+  {
+    id: 2,
+    client: clients[1],
+    name: "HISTORY: SCOOPED! – Arun Ice Cream World Record Attempt",
+    location: "Hyderabad,India",
+    category: "Launch",
+    media: [{ type: "video", url: arunIceCreamVdo, poster: arun3 }],
+    likes: 523,
+    caption:
+      "Abybaby Events brought a record-breaking vision to life for Arun Ice Cream, turning Infinity Fun & Joy Space into a sea of sprinkles and smiles in a bold attempt at the Guinness World Record for the Largest Ice Cream Party ever held.",
+    comments: [
+      {
+        id: 1,
+        author: "Fatima H.",
+        text: "Such a beautiful event concept!",
+        time: "1d",
+      },
+      {
+        id: 2,
+        author: "Omar K.",
+        text: "The dessert table was a work of art.",
+        time: "1d",
+      },
+    ],
+
+    date: "May 28, 2026",
+  },
+  {
+    id: 9,
+    client: clients[9],
+    name: "Mercedes-Benz Mobile Service Launch ",
+    location: "Bengaluru,India",
+    category: "Launch ",
+    media: [
+      { type: "video", url: mercedesBenVdo, poster: mercedesBenzMobileLaunch },
+    ],
+    likes: 1000,
+    caption:
+      "Where convenience meets luxury — Mercedes-Benz launched its Mobile Service initiative, bringing expert vehicle care directly to customers' doorsteps. A seamless launch experience reflecting the brand's commitment to innovation and customer-first excellence, redefining after-sales service beyond the showroom.",
+    comments: [
+      {
+        id: 1,
+        author: "Layla S.",
+        text: "This is literally my dream event! 😍",
+        time: "3d",
+      },
+      {
+        id: 2,
+        author: "Aisha M.",
+        text: "Can you do my event next? Perfection.",
+        time: "3d",
+      },
+      {
+        id: 3,
+        author: "Nour J.",
+        text: "The floral arch alone is iconic.",
+        time: "4d",
+      },
+      {
+        id: 4,
+        author: "Hessa A.",
+        text: "I was there! Even better in person.",
+        time: "4d",
+      },
+    ],
+
+    date: "May 15, 2026",
+  },
+  {
+    id: 19,
+    client: clients[19],
+    name: "Sonpur Mela",
+    location: "Bihar,India",
+    category: "Activation",
+    media: [{ type: "video", url: sonpurMelaVdo }],
+    likes: 1000,
+    caption:
+      "Team Abybaby brought fun, fashion, and fantasy to life with a magical Lilo & Stitch experience for Max Fashion — packed with color, style, and joyful energy at every turn.",
+    comments: [
+      {
+        id: 1,
+        author: "Layla S.",
+        text: "This is literally my dream event! 😍",
+        time: "3d",
+      },
+      {
+        id: 2,
+        author: "Aisha M.",
+        text: "Can you do my event next? Perfection.",
+        time: "3d",
+      },
+      {
+        id: 3,
+        author: "Nour J.",
+        text: "The floral arch alone is iconic.",
+        time: "4d",
+      },
+      {
+        id: 4,
+        author: "Hessa A.",
+        text: "I was there! Even better in person.",
+        time: "4d",
+      },
+    ],
+
+    date: "May 15, 2026",
+  },
+  {
+    id: 4,
+    client: clients[3],
+    name: "Toyota Kirloskar x Ziro Festival of Music 2024",
+    location: "Arunachal Pradesh,India",
+    category: "Concert ",
+    media: [
+      { type: "video", url: toyotazerovdo, poster: zira3 },
+      { type: "image", url: zira2 },
+    ],
+    likes: 1204,
+    caption:
+      "Abybaby crafted Toyota's role as official mobility partner into a cultural milestone — blending sustainability and community through eco tours, bamboo groves, and the Toyota Zone. 4.2K+ tour impressions | 1.3B+ digital reach | 40+ local collaborations. Not a campaign, a connection.",
+    comments: [
+      {
+        id: 1,
+        author: "Layla S.",
+        text: "This is literally my dream event! 😍",
+        time: "3d",
+      },
+      {
+        id: 2,
+        author: "Aisha M.",
+        text: "Can you do my event next? Perfection.",
+        time: "3d",
+      },
+      {
+        id: 3,
+        author: "Nour J.",
+        text: "The floral arch alone is iconic.",
+        time: "4d",
+      },
+      {
+        id: 4,
+        author: "Hessa A.",
+        text: "I was there! Even better in person.",
+        time: "4d",
+      },
+    ],
+
+    date: "May 15, 2026",
+  },
+  {
+    id: 17,
+    client: clients[17],
+    name: "Hero Voice Of Destiny",
+    location: "Assam & North East,India",
+    category: "Activation",
+    media: [{ type: "video", url: heroVoiceOfDestinyVdo, poster: herologo }],
+    likes: 1000,
+    caption:
+      " Rooted in the musical richness of Assam and the North East's 7 Sister states, this playful voice contest delivered a unique cultural experience — seamlessly blending product showcase of the Hero Destiny range with meaningful engagement and sales.",
+    comments: [
+      {
+        id: 1,
+        author: "Layla S.",
+        text: "This is literally my dream event! 😍",
+        time: "3d",
+      },
+      {
+        id: 2,
+        author: "Aisha M.",
+        text: "Can you do my event next? Perfection.",
+        time: "3d",
+      },
+      {
+        id: 3,
+        author: "Nour J.",
+        text: "The floral arch alone is iconic.",
+        time: "4d",
+      },
+      {
+        id: 4,
+        author: "Hessa A.",
+        text: "I was there! Even better in person.",
+        time: "4d",
+      },
+    ],
+
+    date: "May 15, 2026",
+  },
+  {
+    id: 5,
+    client: clients[4],
+    name: "Flipkart Float Campaign – Odisha",
+    location: "Odisha,India",
+    category: "Activation ",
+    media: [
+      { type: "video", url: flipkatFloatCampaign, poster: flipkartPoster },
+    ],
+    likes: 2000,
+    caption:
+      "Abybaby Events brought Flipkart's grand float campaign to life across Odisha, filling the streets with colour, music, and excitement — creating an unforgettable experience for the people of Odisha.",
+    comments: [
+      {
+        id: 1,
+        author: "Layla S.",
+        text: "This is literally my dream event! 😍",
+        time: "3d",
+      },
+      {
+        id: 2,
+        author: "Aisha M.",
+        text: "Can you do my event next? Perfection.",
+        time: "3d",
+      },
+      {
+        id: 3,
+        author: "Nour J.",
+        text: "The floral arch alone is iconic.",
+        time: "4d",
+      },
+      {
+        id: 4,
+        author: "Hessa A.",
+        text: "I was there! Even better in person.",
+        time: "4d",
+      },
+    ],
+
+    date: "May 15, 2026",
+  },
+  {
+    id: 6,
+    client: clients[5],
+    name: "Volvo Skill Contest 2025 ",
+    location: "Bengaluru,India",
+    category: "Activation ",
+    media: [{ type: "video", url: volvoSkillContestVdo, poster: volvoImage }],
+    likes: 2000,
+    caption:
+      "Team Abybaby proudly executed the Volvo Skill Contest 2025, celebrating expertise, teamwork, and Volvo excellence through challenges that pushed limits and raised standards.",
+    comments: [
+      {
+        id: 1,
+        author: "Layla S.",
+        text: "This is literally my dream event! 😍",
+        time: "3d",
+      },
+      {
+        id: 2,
+        author: "Aisha M.",
+        text: "Can you do my event next? Perfection.",
+        time: "3d",
+      },
+      {
+        id: 3,
+        author: "Nour J.",
+        text: "The floral arch alone is iconic.",
+        time: "4d",
+      },
+      {
+        id: 4,
+        author: "Hessa A.",
+        text: "I was there! Even better in person.",
+        time: "4d",
+      },
+    ],
+
+    date: "May 15, 2026",
+  },
+  {
+    id: 8,
+    client: clients[8],
+    name: "Trucking into the Future & Tata Bandhan – Tata Motors",
+    location: "Jamshedpur & Jharkhand,India",
+    category: "Conference",
+    media: [{ type: "video", url: tatabandhanvdo, poster: tataYoddhaImage }],
+    likes: 1000,
+    caption: `Abybaby Events hosted Tata Motors' "Trucking into the Future" and Bandhan celebration, bringing together 300+ valued customers for insightful discussions and partnership celebrations — driving Tata Motors' vision of sustainable, tech-driven logistics forward.`,
+    comments: [
+      {
+        id: 1,
+        author: "Layla S.",
+        text: "This is literally my dream event! 😍",
+        time: "3d",
+      },
+      {
+        id: 2,
+        author: "Aisha M.",
+        text: "Can you do my event next? Perfection.",
+        time: "3d",
+      },
+      {
+        id: 3,
+        author: "Nour J.",
+        text: "The floral arch alone is iconic.",
+        time: "4d",
+      },
+      {
+        id: 4,
+        author: "Hessa A.",
+        text: "I was there! Even better in person.",
+        time: "4d",
+      },
+    ],
+
+    date: "May 15, 2026",
+  },
+  {
+    id: 7,
+    client: clients[7],
+    name: "Mercedes Service Clinic Launch",
+    location: "Bengaluru,India",
+    category: "Launch",
+    media: [
+      { type: "video", url: mercedesVdo, poster: mercedesServiceClinicImage },
+    ],
+    likes: 1000,
+    caption:
+      "Proud to have organized the launch of the new Mercedes Service Clinic, delivering premium care with precision and purpose. From planning to execution, the event reflected excellence, innovation, and customer-centricity — a proud milestone for the team.",
+    comments: [
+      {
+        id: 1,
+        author: "Layla S.",
+        text: "This is literally my dream event! 😍",
+        time: "3d",
+      },
+      {
+        id: 2,
+        author: "Aisha M.",
+        text: "Can you do my event next? Perfection.",
+        time: "3d",
+      },
+      {
+        id: 3,
+        author: "Nour J.",
+        text: "The floral arch alone is iconic.",
+        time: "4d",
+      },
+      {
+        id: 4,
+        author: "Hessa A.",
+        text: "I was there! Even better in person.",
+        time: "4d",
+      },
+    ],
+
+    date: "May 15, 2026",
+  },
+  {
+    id: 14,
+    client: clients[14],
+    name: "Aagomoni Vodafone",
+    location: "Kolkata,India",
+    category: "Event",
+    media: [{ type: "video", url: agomoniVodafone, poster: agomoni5 }],
+    likes: 1000,
+    // caption:
+    //   "Team Abybaby brought fun, fashion, and fantasy to life with a magical Lilo & Stitch experience for Max Fashion — packed with color, style, and joyful energy at every turn.",
+    comments: [
+      {
+        id: 1,
+        author: "Layla S.",
+        text: "This is literally my dream event! 😍",
+        time: "3d",
+      },
+      {
+        id: 2,
+        author: "Aisha M.",
+        text: "Can you do my event next? Perfection.",
+        time: "3d",
+      },
+      {
+        id: 3,
+        author: "Nour J.",
+        text: "The floral arch alone is iconic.",
+        time: "4d",
+      },
+      {
+        id: 4,
+        author: "Hessa A.",
+        text: "I was there! Even better in person.",
+        time: "4d",
+      },
+    ],
+
+    date: "May 15, 2026",
+  },
+  {
+    id: 12,
+    client: clients[12],
+    name: "Max Fashion x Disney's Lilo & Stitch Event",
+    location: "Hyderabad,India",
+    category: "Exhibition",
+    media: [{ type: "video", url: maxfashionVdo, poster: maxFashionImage }],
+    likes: 1000,
+    caption:
+      "Team Abybaby brought fun, fashion, and fantasy to life with a magical Lilo & Stitch experience for Max Fashion — packed with color, style, and joyful energy at every turn.",
+    comments: [
+      {
+        id: 1,
+        author: "Layla S.",
+        text: "This is literally my dream event! 😍",
+        time: "3d",
+      },
+      {
+        id: 2,
+        author: "Aisha M.",
+        text: "Can you do my event next? Perfection.",
+        time: "3d",
+      },
+      {
+        id: 3,
+        author: "Nour J.",
+        text: "The floral arch alone is iconic.",
+        time: "4d",
+      },
+      {
+        id: 4,
+        author: "Hessa A.",
+        text: "I was there! Even better in person.",
+        time: "4d",
+      },
+    ],
+
+    date: "May 15, 2026",
+  },
+  {
+    id: 13,
+    client: clients[13],
+    name: "Hurdle Hawk",
+    location: "Kolkata,India",
+    category: "Sport's Event",
+    media: [{ type: "video", url: hurdleHawkVdo, poster: hurdle_Hawk1 }],
+    likes: 1000,
+    // caption:
+    //   "Team Abybaby brought fun, fashion, and fantasy to life with a magical Lilo & Stitch experience for Max Fashion — packed with color, style, and joyful energy at every turn.",
+    comments: [
+      {
+        id: 1,
+        author: "Layla S.",
+        text: "This is literally my dream event! 😍",
+        time: "3d",
+      },
+      {
+        id: 2,
+        author: "Aisha M.",
+        text: "Can you do my event next? Perfection.",
+        time: "3d",
+      },
+      {
+        id: 3,
+        author: "Nour J.",
+        text: "The floral arch alone is iconic.",
+        time: "4d",
+      },
+      {
+        id: 4,
+        author: "Hessa A.",
+        text: "I was there! Even better in person.",
+        time: "4d",
+      },
+    ],
+
+    date: "May 15, 2026",
+  },
+  {
+    id: 15,
+    client: clients[15],
+    name: "Mahindra Football League",
+    location: "West Bengal & North East,India",
+    category: "Sports Event",
+    media: [
+      { type: "video", url: mahindraFootballLeagueVdo, poster: mahindraLogo },
+    ],
+    likes: 1000,
+    caption:
+      "An engagement-first football activation spanning 2 states, featuring 300+ contestants, 20+ stands, and 500+ strong audiences. The event forged emotional connections with SCV owners through test drives, spot bookings, and sales — rooted in the region's deep passion for football, West Bengal, and the North East.",
+    comments: [
+      {
+        id: 1,
+        author: "Layla S.",
+        text: "This is literally my dream event! 😍",
+        time: "3d",
+      },
+      {
+        id: 2,
+        author: "Aisha M.",
+        text: "Can you do my event next? Perfection.",
+        time: "3d",
+      },
+      {
+        id: 3,
+        author: "Nour J.",
+        text: "The floral arch alone is iconic.",
+        time: "4d",
+      },
+      {
+        id: 4,
+        author: "Hessa A.",
+        text: "I was there! Even better in person.",
+        time: "4d",
+      },
+    ],
+
+    date: "May 15, 2026",
+  },
+  {
+    id: 16,
+    client: clients[16],
+    name: "Hero Sales Carnival",
+    location: "Bihar,India",
+    category: "Activation",
+    media: [{ type: "video", url: heroSalesCarnivalVdo, poster: herologo }],
+    likes: 1000,
+    caption:
+      "A high-impact, sales-driven activation that engaged 15,000+ people, delivering 1,000+ units sold, 40+ exchanges, 2,000+ enquiries, 150+ finance cases, 850+ insurance policies, and 50+ loyalty bonuses.",
+    comments: [
+      {
+        id: 1,
+        author: "Layla S.",
+        text: "This is literally my dream event! 😍",
+        time: "3d",
+      },
+      {
+        id: 2,
+        author: "Aisha M.",
+        text: "Can you do my event next? Perfection.",
+        time: "3d",
+      },
+      {
+        id: 3,
+        author: "Nour J.",
+        text: "The floral arch alone is iconic.",
+        time: "4d",
+      },
+      {
+        id: 4,
+        author: "Hessa A.",
+        text: "I was there! Even better in person.",
+        time: "4d",
+      },
+    ],
+
+    date: "May 15, 2026",
+  },
+  {
+    id: 11,
+    client: clients[11],
+    name: "Toyota Supplier Meet",
+    location: "Bengaluru,India",
+    category: "Conference",
+    media: [
+      { type: "video", url: toyotaSupplierMeetVdo, poster: toyotaSupplierMeet },
+    ],
+    likes: 1000,
+    caption:
+      "Abybaby Events proudly presented the Toyota Supplier Meet in Bengaluru — a refined gathering that strengthened alliances between trust, innovation, and enduring partnerships, driving excellence forward at every turn.",
+    comments: [
+      {
+        id: 1,
+        author: "Layla S.",
+        text: "This is literally my dream event! 😍",
+        time: "3d",
+      },
+      {
+        id: 2,
+        author: "Aisha M.",
+        text: "Can you do my event next? Perfection.",
+        time: "3d",
+      },
+      {
+        id: 3,
+        author: "Nour J.",
+        text: "The floral arch alone is iconic.",
+        time: "4d",
+      },
+      {
+        id: 4,
+        author: "Hessa A.",
+        text: "I was there! Even better in person.",
+        time: "4d",
+      },
+    ],
+
+    date: "May 15, 2026",
+  },
+  // {
+  //   id: 3,
+  //   client: clients[2],
+  //   name: "Mia by Tanishq Showroom Launch ",
+  //   location: "Guwahati,India",
+  //   category: "Store Activation",
+  //   media: [
+  //     { type: "video", url: miavdo1, poster: mia1 },
+  //     { type: "video", url: miavdo2, poster: mia2 },
+  //     { type: "video", url: miavdo3, poster: mia3 },
+  //     { type: "image", url: mia4 },
+  //   ],
+  //   likes: 391,
+  //   caption:
+  //     "Abybaby Events curated the elegant unveiling of the Mia by Tanishq showroom in Guwahati, blending exquisite collections with an immersive luxury experience.",
+  //   comments: [
+  //     {
+  //       id: 1,
+  //       author: "James T.",
+  //       text: "Exceptional execution from start to finish.",
+  //       time: "2d",
+  //     },
+  //   ],
+
+  //   date: "May 20, 2026",
+  // },
+
+  {
+    id: 10,
+    client: clients[10],
+    name: "LAGISAARTH Challenge – Tata Yodha, The Beast of the Hills",
+    location: "Meghalaya,India",
+    category: "Activation",
+    media: [{ type: "video", url: tataYoddhaVdo, poster: tataYoddhaImage }],
+    likes: 1000,
+    caption:
+      "A 26+ location experiential campaign across Meghalaya's toughest terrains, engaging 100+ drivers, 150+ test drives, and 300+ customer enquiries — proving the Tata Yodha's power where it matters most. Powered by Abybaby Events Pvt. Ltd.",
+    comments: [
+      {
+        id: 1,
+        author: "Layla S.",
+        text: "This is literally my dream event! 😍",
+        time: "3d",
+      },
+      {
+        id: 2,
+        author: "Aisha M.",
+        text: "Can you do my event next? Perfection.",
+        time: "3d",
+      },
+      {
+        id: 3,
+        author: "Nour J.",
+        text: "The floral arch alone is iconic.",
+        time: "4d",
+      },
+      {
+        id: 4,
+        author: "Hessa A.",
+        text: "I was there! Even better in person.",
+        time: "4d",
+      },
+    ],
+
+    date: "May 15, 2026",
+  },
+];
+export const upcomingEvents = [
+  {
+    id: 1,
+    clientName: "Toyota Drum Tao",
+    clientInitials: "DT",
+    clientColor: "#4ECDC4",
+    clientlogo: ganeshChaturthiLogo,
+    eventName: "Ganesh Chaturthi Branding Campaign",
+    location: "Mumbai",
+    eventImage: ganeshChaturthi1,
+    eventType: "Branding Campaign",
+    daysRemaining: 41,
+    attendance: "10,00,000",
+    description:
+      "Ganesh Chaturthi brings together 15–20 million devotees across Mumbai and Maharashtra, making it one of India's largest public celebrations.",
+  },
+  {
+    id: 2,
+    clientName: "Toyota Execution ",
+    clientInitials: "AI",
+    clientColor: "#F97316",
+    clientlogo: durgaPujaLogo,
+    eventName: "Durga Puja Branding Campaign",
+    location: "Kolkata",
+    eventImage: durgaPuja1,
+    eventType: "Branding Campaign",
+    daysRemaining: 73,
+    attendance: "3,00,00,000",
+    description:
+      "Every year, Kolkata transforms into the world's largest open-air celebration, attracting 10–12 million visitors across more than 3,000 community pujas over five days.",
+  },
+];
+
+export const caseStudies = [
+  {
+    id: 1,
+    thumbnail: arun4,
+    clientInitials: "AI",
+    clientColor: "#FF6B6B",
+    clientlogo: arunlogo,
+    clientName: "Arun Ice Creams",
+    title: "Guinness World Records — World's Coolest Ice Cream Party",
+    summary:
+      "How we helped Arun Ice Creams (Hatsun Agro Product Ltd.) set a Guinness World Record with 5,113 children — turning a brand celebration into a nationwide experiential milestone.",
+  },
+  {
+    id: 2,
+    // NOTE: mia1 / mialogo are Tanishq assets reused as placeholders — swap
+    // for real Mahindra thumbnail/logo imports once available.
+    thumbnail: sonpurMela1,
+    clientInitials: "MM",
+    clientColor: "#DC2626",
+    clientlogo: mahindraLogo,
+    clientName: "Mahindra",
+    title: "Mahindra at Sonpur Mela",
+    summary:
+      "A grassroots activation at India's Sonpur Mela that positioned Mahindra vehicles as a sustainable alternative to cattle — driving 4,000+ vehicle sales and reaching 15,000+ people with animal welfare messaging.",
+  },
+];
+
+export const awards = [
+  {
+    id: 1,
+    image: arun4,
+    title: "Guinness World Records — World's Coolest Ice Cream Party",
+    year: 2026,
+    description:
+      "Awarded for successfully securing a Guinness World Record with 5,113 participating children — a large-scale experiential milestone that strengthened Arun Ice Creams' brand reputation and community connection.",
+  },
+  {
+    id: 2,
+    // NOTE: mia1 is a Tanishq asset reused as a placeholder — swap for a real
+    // Mahindra / Sonepur Mela award image once available.
+    image: sonpurMela1,
+    title: "Excellence in Rural Marketing & CSR — Sonpur Mela",
+    year: 2024,
+    description:
+      "A ground-level activation at one of India's oldest and largest cattle fairs, positioning Mahindra vehicles as a practical, sustainable alternative for a community built around animal trade.",
+  },
+];
