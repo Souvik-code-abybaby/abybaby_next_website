@@ -193,11 +193,14 @@
 //     </>
 //   );
 // }
+'use client'
+import Image from "next/image";
 import { useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { CommonSectionModal } from "../../commonSection/CommonSectionModal";
 import { useNavigate } from "react-router-dom";
 import { Info, BookOpen, Shield, FileText, Lock, Award } from "lucide-react";
+import Image from "next/image";
 import {
   MessageCircle,
   ChevronDown,
@@ -234,7 +237,7 @@ export function MobileHeader({ onMessageClick, onLogoClick, onNavigate }) {
           className="flex items-center gap-2 bg-transparent border-none p-0 cursor-pointer"
         >
           <div className="rounded-sm flex items-center justify-center overflow-hidden w-10 h-10 bg-[linear-gradient(135deg,#d4456a_0%,#f9a8c9_100%)]">
-            <img
+            <Image
               src={logo}
               alt="Krishivikas Logo"
               className="overflow-hidden rounded-lg h-12 w-12"
@@ -349,7 +352,7 @@ export function MobileHeader({ onMessageClick, onLogoClick, onNavigate }) {
               <div className="flex items-center justify-between px-4 h-16 border-b border-black/[0.07]">
                 <div className="flex items-center gap-3">
                   <div className="rounded-sm flex items-center justify-center overflow-hidden w-9 h-9 bg-[linear-gradient(135deg,#d4456a_0%,#f9a8c9_100%)]">
-                    <img
+                    <Image
                       src={logo}
                       alt="Kriishivikas logo"
                       className="rounded-lg h-10 w-10 overflow-hidden"

@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { Play, Heart, MessageCircle } from "lucide-react";
+import Image from "next/image";
 
 export default function GridCell({ item, onClick }) {
   const [hovered, setHovered] = useState(false);
@@ -38,7 +39,7 @@ export default function GridCell({ item, onClick }) {
           className="w-full h-full object-cover bg-black pointer-events-none "
         />
       ) : (
-        <img
+        <Image
           src={item.src}
           alt={item.caption}
           className="w-full h-full object-cover block"

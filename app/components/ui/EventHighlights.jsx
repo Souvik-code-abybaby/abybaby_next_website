@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { EVENTS } from "../../../public/events/events";
 import ProgressItem from "./ProgressItem";
 import { motion } from "motion/react";
@@ -63,7 +64,7 @@ export default function EventHighlights() {
               transition={{ type: "spring", stiffness: 300, damping: 24 }}
               className="relative overflow-hidden rounded-xl group aspect-[4/3]"
             >
-              <img
+              <Image
                 src={event.image}
                 alt={event.name}
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"

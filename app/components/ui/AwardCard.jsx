@@ -1,9 +1,10 @@
 import { Trophy } from "lucide-react";
+import Image from "next/image";
 export default function AwardCard({ award }) {
   return (
     <div className="rounded-2xl overflow-hidden bg-[color-mix(in_srgb,var(--accent)_3%,var(--background))] ">
       <div className="aspect-[2/1] relative bg-[var(--muted)]">
-        <img
+        <Image
           src={award.image}
           alt={award.title}
           className="w-full h-full object-cover"

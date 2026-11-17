@@ -5,6 +5,7 @@ import { useCallback, useEffect } from "react";
 import { FeedCard } from "./FeedCard";
 import { ArrowRight } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 // import { Link } from "react-router-dom";
 const FEED_PAGE_SIZE = 3;
 export default function FeedWithInfiniteScroll({
@@ -115,7 +116,7 @@ export default function FeedWithInfiniteScroll({
       {!hasMore && (
         <div className="flex flex-col items-center py-8 gap-2">
           <div className="rounded-full flex items-center justify-center w-12 h-12 bg-[linear-gradient(135deg,#d4456a_0%,#f9a8c9_100%)]">
-            <img src={logo} alt="Krishivikas Logo" loading="lazy" />
+            <Image src={logo} alt="Krishivikas Logo" loading="lazy" />
           </div>
           <p className="text-[13px] text-[#8e8e93] text-center">
             You've seen all feeds.

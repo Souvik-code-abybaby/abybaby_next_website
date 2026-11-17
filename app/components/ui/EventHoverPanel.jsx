@@ -1,5 +1,6 @@
 import { AnimatePresence } from "motion/react";
 import { motion } from "motion/react";
+import Image from "next/image";
 export default function EventHoverPanel({ hoveredEvent }) {
   return (
     <div className="hidden xl:block w-64 2xl:w-100 fixed flex-shrink-0 right-[10vw] top-[15vh]">
@@ -14,7 +15,7 @@ export default function EventHoverPanel({ hoveredEvent }) {
             className="rounded-2xl bg-white  border-gray-100 p-5 border "
           >
             {/* Preview Image */}
-            <img
+            <Image
               src={hoveredEvent.image}
               alt={hoveredEvent.name}
               className="w-full rounded-xl object-cover mb-4 h-[150px]"

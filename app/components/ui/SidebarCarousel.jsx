@@ -96,6 +96,7 @@
 // }
 import { useState, useRef, useEffect } from "react";
 import { MapPin } from "lucide-react";
+import Image from "next/image";
 
 export default function SidebarCarousel({ studies, activeId, onSelect }) {
   const [paused, setPaused] = useState(false);
@@ -172,7 +173,7 @@ export default function SidebarCarousel({ studies, activeId, onSelect }) {
       }`}
     >
       <div className="aspect-video overflow-hidden">
-        <img
+        <Image
           src={study.heroImage}
           alt={study.title}
           className="w-full h-full object-cover block"

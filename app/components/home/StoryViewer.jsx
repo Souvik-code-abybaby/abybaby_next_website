@@ -1,9 +1,12 @@
+'use client';
 import { useEffect, useState, useCallback, useRef } from "react";
 import { motion, AnimatePresence, useMotionValue, animate } from "motion/react";
 import { X, ChevronLeft, ChevronRight } from "lucide-react";
 import { Volume2, VolumeX } from "lucide-react";
+
 import AdjacentCard from "../../components/ui/AdjacentCard";
 import { useDocumentVisible } from "../../components/ui/useDocumentVisible";
+import Image from "next/image";
 const MAIN_WIDTH = 300;
 const MAIN_HEIGHT = 500;
 const ADJ_SCALE = 0.42;
@@ -58,7 +61,7 @@ function FullPreviewCard({ client }) {
           className="absolute inset-0 w-full h-full object-cover"
         />
       ) : (
-        <img
+        <Image
           src={story.url}
           alt={client.name}
           className="absolute inset-0 w-full h-full object-cover"
@@ -70,7 +73,7 @@ function FullPreviewCard({ client }) {
 
       <div className="absolute top-8 left-3 right-3 flex items-center gap-2 z-10">
         <div className="rounded-full flex items-center justify-center overflow-hidden bg-white border-white border-2 h-[34px] w-[34px]">
-          <img src={client.initials} alt={client.name} />
+          <Image src={client.initials} alt={client.name} />
         </div>
         <div>
           <div className="text-white text-[13px] font-semibold">
@@ -300,7 +303,7 @@ export function StoryViewer({ clients = [], activeClientId, onClose, onSeen }) {
       <div className="absolute top-8 left-3 right-3 flex items-center justify-between z-10">
         <div className="flex items-center gap-2">
           <div className="rounded-full flex items-center justify-center overflow-hidden bg-white border-white border-2 h-[34px] w-[34px]">
-            <img src={currentClient.initials} alt={currentClient.name} />
+            <Image src={currentClient.initials} alt={currentClient.name} />
           </div>
           <div>
             <div className="text-white text-[13px] font-semibold">
@@ -339,7 +342,7 @@ export function StoryViewer({ clients = [], activeClientId, onClose, onSeen }) {
           className="absolute inset-0 w-full h-full object-contain overflow-hidden"
         />
       ) : (
-        <img
+        <Image
           src={story.url}
           alt={currentClient.name}
           className="absolute inset-0 w-full h-full object-contain overflow-hidden"

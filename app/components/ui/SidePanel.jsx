@@ -1,7 +1,9 @@
+'use client';
 import { useState } from "react";
 import FullscreenModal from "./FullScreenModal";
 import { useRef, useEffect } from "react";
 import { motion, AnimatePresence } from "motion/react";
+import Image from "next/image";
 import {
   X,
   Phone,
@@ -17,6 +19,7 @@ import {
 import logo from "../../assets/images/download.webp";
 
 import { LOCATIONS } from "../../../public/presence/presence";
+import Image from "next/image";
 export default function SidePanel({ setOpen, onNavigate }) {
   function getMapSrc(lat, lng, zoom = 13) {
     return `https://maps.google.com/maps?q=${lat},${lng}&z=${zoom}&output=embed`;
@@ -157,7 +160,7 @@ export default function SidePanel({ setOpen, onNavigate }) {
 
                 {/* Logo */}
                 <div className="absolute top-5 right-5 text-right">
-                  <img src={logo} alt="Krishivikas Logo" className="h-12 ml-auto w-12" />
+                  <Image src={logo} alt="Krishivikas Logo" className="h-12 ml-auto w-12" />
                 </div>
 
                 {/* Name Section */}
@@ -241,7 +244,7 @@ export default function SidePanel({ setOpen, onNavigate }) {
                 >
                   <X size={20} className="text-gray-700" />
                 </button>
-                <img src={logo} className="h-16 mb-4 rounded-full" loading="lazy"/>
+                <Image src={logo} className="h-16 mb-4 rounded-full" loading="lazy"/>
 
                 <h3 className="text-xl font-bold font-sans">
                   ABYBABY EVENTS PVT LTD
@@ -387,7 +390,7 @@ export default function SidePanel({ setOpen, onNavigate }) {
                         : "border-gray-200 bg-white text-gray-700 hover:border-[#2C7048] hover:bg-[#f4faf6] hover:text-[#2C7048]"
                     }`}
                   >
-                    <img
+                    <Image
                       src={loc.locationsImage}
                       alt={loc.city}
                       className="h-full w-full"

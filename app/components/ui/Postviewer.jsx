@@ -15,6 +15,7 @@ import {
   Maximize2,
 } from "lucide-react";
 import { toast } from "sonner";
+import Image from "next/image";
 
 export function PostViewer({ post, onClose }) {
   const [imageIndex, setImageIndex] = useState(0);
@@ -248,7 +249,7 @@ export function PostViewer({ post, onClose }) {
             <div
               className={`overflow-hidden w-[42px] h-[42px] rounded-full flex items-center justify-center flex-shrink-0 border-2 border-white/30 bg-[${post.client.bgColor}]`}
             >
-              <img
+              <Image
                 src={post.client.initials}
                 alt={post.name}
                 className="w-full h-full"

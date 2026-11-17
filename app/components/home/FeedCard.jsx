@@ -1,3 +1,5 @@
+'use client';
+import Image from "next/image";
 import { useState, useRef, useEffect } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import {
@@ -160,7 +162,7 @@ export function FeedCard({ post, muted, onToggleMute, isFeedPaused }) {
         >
           <div className="flex items-center gap-3 cursor-pointer">
             <div className="rounded-full flex items-center justify-center shrink-0 overflow-hidden bg-black border">
-              <img
+              <Image
                 src={post.client?.initials}
                 alt={post.name}
                 className="rounded-full h-[42px] w-[42px] "

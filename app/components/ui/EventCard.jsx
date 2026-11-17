@@ -1,8 +1,10 @@
+'use client';
 import { useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { MapPin, Trophy, Calendar, Users } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import { RegistrationModal } from "./RegistrationModal";
+import Image from "next/image";
 export default function EventCard({ event, onNavigate }) {
   const navigate = useNavigate();
   const [expanded, setExpanded] = useState(false);
@@ -34,7 +36,7 @@ export default function EventCard({ event, onNavigate }) {
             className="overflow-hidden"
           >
             <div className="relative aspect-video bg-[var(--muted)]">
-              <img
+              <Image
                 src={event.eventImage}
                 alt={event.eventName}
                 className="w-full h-full object-cover"
@@ -53,7 +55,7 @@ export default function EventCard({ event, onNavigate }) {
       <div className="pt-3 pb-4 px-0">
         <div className="flex items-center gap-3 mb-3">
           <div className="rounded-full flex items-center justify-center shrink-0 overflow-hidden w-8 h-8 text-[10px] font-bold ">
-            <img src={event.clientlogo} alt={event.name} loading="lazy" />
+            <Image src={event.clientlogo} alt={event.name} loading="lazy" />
           </div>
           <div className="flex-1 min-w-0">
             <div className="truncate text-[13px] font-semibold text-[var(--foreground)] ">

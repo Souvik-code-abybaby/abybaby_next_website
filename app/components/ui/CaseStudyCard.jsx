@@ -1,9 +1,10 @@
 import { ExternalLink } from "lucide-react";
+import Image from "next/image";
 export default function CaseStudyCard({ caseStudy }) {
   return (
     <div className="rounded-2xl overflow-hidden ">
       <div className="aspect-video relative bg-[var(--muted)]">
-        <img
+        <Image
           src={caseStudy.thumbnail}
           alt={caseStudy.title}
           className="w-full h-full object-cover"
@@ -13,7 +14,7 @@ export default function CaseStudyCard({ caseStudy }) {
       <div className="pt-3 pb-4 px-0">
         <div className="flex items-center gap-2 mb-3">
           <div className="rounded-full flex items-center justify-center shrink-0 overflow-hidden w-6 h-6 text-[9px] font-bold ">
-            <img src={caseStudy.clientlogo} alt={caseStudy.clientName} loading="lazy" />
+            <Image src={caseStudy.clientlogo} alt={caseStudy.clientName} loading="lazy" />
           </div>
           <span className="text-[11px] text-[var(--muted-foreground)] font-[var(--font-family-body)]">
             {caseStudy.clientName}

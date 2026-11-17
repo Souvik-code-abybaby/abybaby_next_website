@@ -89,6 +89,7 @@
 // }
 import { useState, useRef, useEffect } from "react";
 import { Trophy } from "lucide-react";
+import Image from "next/image";
 
 export default function AwardsSidebarCarousel({ awards, activeId, onSelect }) {
   const [paused, setPaused] = useState(false);
@@ -159,7 +160,7 @@ export default function AwardsSidebarCarousel({ awards, activeId, onSelect }) {
       }`}
     >
       <div className="aspect-video overflow-hidden">
-        <img
+        <Image
           src={award.heroImage}
           alt={award.title}
           className="w-full h-full block object-cover"

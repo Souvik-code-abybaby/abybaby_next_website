@@ -3,8 +3,8 @@ import { motion, AnimatePresence } from "motion/react";
 import { X, Send } from "lucide-react";
 
 export function CommentModal({ isOpen, onClose }) {
-  const SCRIPT_URL = import.meta.env.VITE_SCRIPT_URL;
-
+  const SCRIPT_URL = process.env.VITE_SCRIPT_URL;
+console.log(SCRIPT_URL);
   const [form, setForm] = useState({
     name: "",
     email: "",
