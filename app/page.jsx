@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { StoriesCarousel } from "./components/home/StoriesCarousel";
+import FeedWithInfiniteScroll from "./components/home/FeedWithInfiniteScroll";
 import { clients } from "../public/home/home";
 export default function Home() {
   return (

@@ -36,7 +36,7 @@ import toyotazerovdo from "../../public/assets/images/zira/toyotaZeroVdo.mp4";
 import tatabandhanvdo from "../../public/assets/images/tatabandhan/tatabandhan.mp4";
 import tatabandhanlogo from "../../public/assets/images/clientlogo/tataMotors.webp";
 import flipkatFloatCampaign from "../../public/assets/images/flipkart/Flipkart's_float_campaign.mp4";
-import flipkartLogo from "../../public/assets/images/flipkart/flipkartLogo.webp";
+import flipkartLogo from "../../public/assets/images/flipkart/flipkartlogo.webp";
 import mercedesLogo from "../../public/assets/images/clientlogo/marcedes.webp";
 import mercedesVdo from "../../public/assets/images/merecedes/mercedesVdo.mp4";
 import volvoSkillContestVdo from "../../public/assets/images/volvo/Volvo_Skill_Contest_2025.mp4";
@@ -548,18 +548,18 @@ import arun3 from "../../public/assets/images/arun/arun3.webp";
 import arun4 from "../../public/assets/images/arun/arun4.webp";
 import arun5 from "../../public/assets/images/arun/arun5.webp";
 import arun6 from "../../public/assets/images/arun/arun6.webp";
-import mia1 from "../../public/assets/images/mia/mia1.webp";
-import mia2 from "../../public/assets/images/mia/mia2.webp";
+import mia1 from "../../public/assets/images/mia/mia 1.webp";
+import mia2 from "../../public/assets/images/mia/mia 2.webp";
 import mia3 from "../../public/assets/images/mia/mia3.webp";
-import mia4 from "../../public/assets/images/mia/mia4.webp";
+import mia4 from "../../public/assets/images/mia/mia3.webp";
 import zira1 from "../../public/assets/images/zira/zira1.webp";
 import zira2 from "../../public/assets/images/zira/zira2.webp";
 import zira3 from "../../public/assets/images/zira/zira3.webp";
 import zira4 from "../../public/assets/images/zira/zira4.webp";
 import dtvdo from "../../public/assets/images/drumtao/dtvdo.mp4";
-import arunvdo from "../../public/assets/images/arun/arunvdo.mp4";
-import miavdo from "../../public/assets/images/mia/miavdo.mp4";
-import ziravdo from "../../public/assets/images/zira/ziravdo.mp4";
+// import arunvdo from "../../public/assets/images/arun/arunvdo.mp4";
+// import miavdo from "../../public/assets/images/mia/miavdo.mp4";
+// import ziravdo from "../../public/assets/images/zira/ziravdo.mp4";
 
 export const feedPosts = [
   {

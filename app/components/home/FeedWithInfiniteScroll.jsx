@@ -1,9 +1,11 @@
+'use client';
 import { useState, useRef } from "react";
 import { feedPosts } from "../../../public/home/home";
 import { useCallback, useEffect } from "react";
 import { FeedCard } from "./FeedCard";
 import { ArrowRight } from "lucide-react";
-import { Link } from "react-router-dom";
+import Link from "next/link";
+// import { Link } from "react-router-dom";
 const FEED_PAGE_SIZE = 3;
 export default function FeedWithInfiniteScroll({
   onNavigate,
@@ -119,7 +121,7 @@ export default function FeedWithInfiniteScroll({
             You've seen all feeds.
           </p>
           <Link
-            to={"/events"}
+            href  ={"/events"}
             onClick={() => onNavigate("events")}
             className="mt-0 flex items-center gap-2 font-base flex-row justify-center cursor-pointer text-[#579F63]"
           >
