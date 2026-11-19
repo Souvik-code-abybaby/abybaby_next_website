@@ -375,6 +375,7 @@
 //     </div>
 //   );
 // }
+'use client';
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import {
@@ -748,7 +749,7 @@ export function ChatbotWidget({ isOpen = false, onClose }) {
                 <div
                   className={`rounded-full flex items-center justify-center shrink-0 w-10 h-10 shadow-[0_4px_12px_rgba(0,0,0,0.15)] bg-${color}`}
                 >
-                  <Icon size={18} className="" />
+                  <Icon size={18}  />
                 </div>
               </motion.a>
             ))}
