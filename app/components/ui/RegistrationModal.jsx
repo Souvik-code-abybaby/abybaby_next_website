@@ -1,10 +1,12 @@
+"use client";
+
 import { useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { X, Send } from "lucide-react";
 
-export function RegistrationModal({ open, onClose, eventName }) {
-  const SCRIPT_URL = import.meta.env.VITE_SCRIPT_URL;
+const SCRIPT_URL = process.env.NEXT_PUBLIC_SCRIPT_URL;
 
+export function RegistrationModal({ open, onClose, eventName }) {
   const [form, setForm] = useState({
     name: "",
     email: "",
@@ -79,7 +81,7 @@ export function RegistrationModal({ open, onClose, eventName }) {
     if (!validateAll()) return;
 
     if (!SCRIPT_URL) {
-      console.error("VITE_SCRIPT_URL is not defined");
+      console.error("NEXT_PUBLIC_SCRIPT_URL is not defined");
       return;
     }
 
@@ -89,7 +91,6 @@ export function RegistrationModal({ open, onClose, eventName }) {
       async (position) => {
         const latitude = position.coords.latitude;
         const longitude = position.coords.longitude;
-        console.log(latitude, longitude);
 
         try {
           await fetch(SCRIPT_URL, {
@@ -149,13 +150,13 @@ export function RegistrationModal({ open, onClose, eventName }) {
             <div className="flex items-center justify-between px-5 py-4 bg-gradient-to-br from-[#579F63] to-[#7CFC58]">
               <div>
                 <div className="font-sans text-white text-lg">
-                  Let's Connect
+                  Let&apos;s Connect
                 </div>
                 <div className="text-white/80 text-xs">
-                  We'll respond within 2 hours
+                  We&apos;ll respond within 2 hours
                 </div>
               </div>
-              <button onClick={resetAndClose}>
+              <button onClick={resetAndClose} aria-label="Close">
                 <X size={18} className="text-white" />
               </button>
             </div>

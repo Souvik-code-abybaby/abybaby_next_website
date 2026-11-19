@@ -390,7 +390,7 @@ import {
 
 export function ChatbotWidget({ isOpen = false, onClose }) {
   const [open, setOpen] = useState(false);
-  const SCRIPT_URL = import.meta.env.VITE_SCRIPT_URL;
+  const SCRIPT_URL = process.env.VITE_SCRIPT_URL;
 
   useEffect(() => {
     setOpen(isOpen);

@@ -8,7 +8,7 @@ import {
   User,
   Globe,
 } from "lucide-react";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 const navItems = [
   { id: "home", icon: Home, label: "Home", path: "/" },
   { id: "events", icon: Calendar, label: "Events", path: "/events" },
@@ -32,7 +32,7 @@ export function MobileBottomNav({ activeSection, onNavigate }) {
         const isActive = activeSection === item.id;
         return (
           <Link
-            to={item.path}
+            href={item.path}
             key={item.id}
             onClick={() => onNavigate(item.id)}
             className={`flex-1 flex flex-col items-center justify-center gap-0.5 relative h-full ${

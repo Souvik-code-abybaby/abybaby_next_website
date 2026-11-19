@@ -2,15 +2,16 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { MapPin, Trophy, Calendar, Users } from "lucide-react";
-import { useNavigate } from "react-router-dom";
+import { useRouter } from "next/navigation";
 import { RegistrationModal } from "./RegistrationModal";
 import Image from "next/image";
 export default function EventCard({ event, onNavigate }) {
-  const navigate = useNavigate();
+  console.log(event)
+  const router = useRouter();
   const [expanded, setExpanded] = useState(false);
   const [showRegistration, setShowRegistration] = useState(false);
   const handleClick = () => {
-    navigate("/events");
+    router.push("/events");
     onNavigate?.("events"); // optional chaining in case it's undefined; match your other sections' naming convention
   };
   const handleCallNow = (e) => {
@@ -55,7 +56,7 @@ export default function EventCard({ event, onNavigate }) {
       <div className="pt-3 pb-4 px-0">
         <div className="flex items-center gap-3 mb-3">
           <div className="rounded-full flex items-center justify-center shrink-0 overflow-hidden w-8 h-8 text-[10px] font-bold ">
-            <Image src={event.clientlogo} alt={event.name} loading="lazy" />
+            <Image src={event.clientlogo} alt={event.eventName} loading="lazy" />
           </div>
           <div className="flex-1 min-w-0">
             <div className="truncate text-[13px] font-semibold text-[var(--foreground)] ">

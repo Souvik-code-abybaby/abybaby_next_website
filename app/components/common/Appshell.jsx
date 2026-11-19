@@ -8,15 +8,15 @@ import { Sidebar } from "../../dashboard/Sidebar";
 import { MobileHeader } from "../common/mobile/MobileHeader";
 import { MobileBottomNav } from "../common/mobile/MobileBottomNav";
 import { RightPanel } from "../../components/home/RightPanel";
-import { ChatbotWidget } from "/./common/ChatbotWidget";
-import { CommonSectionModal } from "./commonSection/CommonSectionModal";
-import { AutoSeo } from "./ui/AutoSeo";
-import PageLoader from "./ui/Pageloader";
-import JsonLd from "./JsonLd";
-import { websiteSchema } from "../seo/websiteSchema";
-import { localBusinessSchema } from "../seo/localBusinessSchema";
-import { organizationSchema } from "../seo/organizationSchema";
-import { upcomingEvents, caseStudies, awards } from "../data/home";
+import { ChatbotWidget } from "../common/ChatbotWidget";
+import { CommonSectionModal } from "../commonSection/CommonSectionModal";
+import { AutoSeo } from "../../components/ui/AutoSeo";
+import PageLoader from "../../components/ui/Pageloader";
+import JsonLd from "../../components/JsonLd";
+// import { websiteSchema } from "../seo/websiteSchema";
+// import { localBusinessSchema } from "../seo/localBusinessSchema";
+// import { organizationSchema } from "../seo/organizationSchema";
+import { upcomingEvents, caseStudies, awards } from "../../../public/home/home";
 
 // section name -> URL
 const ROUTES = {
@@ -153,9 +153,9 @@ export default function AppShell({ children }) {
         )}
 
         <Toaster position="bottom-center" richColors />
-        <JsonLd data={organizationSchema} />
+        {/* <JsonLd data={organizationSchema} />
         <JsonLd data={websiteSchema} />
-        <JsonLd data={localBusinessSchema} />
+        <JsonLd data={localBusinessSchema} /> */}
       </div>
     </NavContext.Provider>
   );

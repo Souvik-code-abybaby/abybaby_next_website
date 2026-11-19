@@ -198,9 +198,9 @@ import Image from "next/image";
 import { useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { CommonSectionModal } from "../../commonSection/CommonSectionModal";
-import { useNavigate } from "react-router-dom";
+import { useRouter } from "next/navigation";
 import { Info, BookOpen, Shield, FileText, Lock, Award } from "lucide-react";
-import Image from "next/image";
+// import Image from "next/image";
 import {
   MessageCircle,
   ChevronDown,
@@ -209,7 +209,7 @@ import {
   Linkedin,
   MoreHorizontal,
 } from "lucide-react";
-import logo from "../../../assets/images/logo.webp";
+import logo from "../../../../public/assets/images/logo.webp";
 
 import { sidebarItems } from "../../../../public/common/mobile/mobileheader";
 import { socials } from "../../../../public/common/mobile/mobilesocial";
@@ -221,7 +221,7 @@ export function MobileHeader({ onMessageClick, onLogoClick, onNavigate }) {
   const [drawerOpen, setDrawerOpen] = useState(false);
   const [moreOpen, setMoreOpen] = useState(false);
   const [commentModalOpen, setCommentModalOpen] = useState(false);
-  const navigate = useNavigate();
+  const router = useRouter();
 
   const handleMessageClick = () => {
     setCommentModalOpen(true);
@@ -378,7 +378,7 @@ export function MobileHeader({ onMessageClick, onLogoClick, onNavigate }) {
                     className="w-full flex items-center gap-3 px-4 py-3 text-left transition-colors border-b border-black/[0.04]"
                     onClick={() => {
                       setDrawerOpen(false);
-                      navigate(view);
+                      router.push(view);
                     }}
                     onMouseEnter={(e) =>
                       (e.currentTarget.style.background = "#fafafa")

@@ -12,7 +12,7 @@ import {
   Trophy,
   BookOpen,
 } from "lucide-react";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 
 export function RightPanel({ events, caseStudies, awards, onNavigate }) {
   return (
@@ -26,7 +26,7 @@ export function RightPanel({ events, caseStudies, awards, onNavigate }) {
             onMouseEnter={(e) => (e.currentTarget.style.opacity = "0.75")}
             onMouseLeave={(e) => (e.currentTarget.style.opacity = "1")}
             onClick={() => onNavigate("/events")}
-            to={"/events"}
+            href={"/events"}
           >
             See all
           </Link>
@@ -49,7 +49,7 @@ export function RightPanel({ events, caseStudies, awards, onNavigate }) {
             onMouseEnter={(e) => (e.currentTarget.style.opacity = "0.75")}
             onMouseLeave={(e) => (e.currentTarget.style.opacity = "1")}
             onClick={() => onNavigate("/casestudies")}
-            to={"/casestudies"}
+            href={"/casestudies"}
           >
             See all
           </Link>
@@ -67,7 +67,7 @@ export function RightPanel({ events, caseStudies, awards, onNavigate }) {
         <div className="flex items-center justify-between">
           <SectionHeader icon={Trophy} label="Awards & Recognition" />
           <Link
-            to={"/awards"}
+            href={"/awards"}
             className="text-xs text-[var(--accent)] font-semibold  no-underline"
             onMouseEnter={(e) => (e.currentTarget.style.opacity = "0.75")}
             onMouseLeave={(e) => (e.currentTarget.style.opacity = "1")}
@@ -105,7 +105,7 @@ export function RightPanel({ events, caseStudies, awards, onNavigate }) {
             { title: "Terms & Conditions", link: "terms", path: "/terms" },
           ].map((item) => (
             <Link
-              to={item.path}
+              href={item.path}
               key={item.title}
               onClick={() => onNavigate(item.link)}
               className="text-[11px] text-[var(--muted-foreground)] no-underline font-[var(--font-family-body)] transition-colors duration-150 cursor-pointer"
