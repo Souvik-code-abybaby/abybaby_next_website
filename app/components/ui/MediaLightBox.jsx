@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import { motion } from "motion/react";
+
 import {
   X,
   ChevronLeft,
@@ -200,7 +201,7 @@ export default function MediaLightbox({ items, startIndex, onClose }) {
           ) : (
             <motion.img
               key={item.id}
-              src={item.src}
+             src={typeof item.src === "string" ? item.src : item.src.src}
               alt={item.caption}
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}

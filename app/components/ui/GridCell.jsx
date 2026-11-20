@@ -4,6 +4,7 @@ import { Play, Heart, MessageCircle } from "lucide-react";
 import Image from "next/image";
 
 export default function GridCell({ item, onClick }) {
+  console.log("item",item);
   const [hovered, setHovered] = useState(false);
   const [isTouch, setIsTouch] = useState(false);
 
