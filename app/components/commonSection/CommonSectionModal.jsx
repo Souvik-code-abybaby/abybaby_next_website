@@ -1,7 +1,7 @@
 import { motion, AnimatePresence } from "motion/react";
 import { Info, BookOpen, Shield, FileText, Lock, X, Award } from "lucide-react";
 import Link from "next/link";
-import JsonLd from "../../components/JsonLd";
+// import JsonLd from "../../components/JsonLd";
 // import { buildBreadcrumbSchema } from "../../seo/breadcrumbSchema";
 const items = [
   {
@@ -80,7 +80,7 @@ export function CommonSectionModal({ isOpen, onClose, onNavigate }) {
             {items.map(({ icon: Icon, label, desc, view, path }) => (
               <Link
                 key={label}
-                to={path}
+                href={path}
                 className="w-full flex items-center gap-3 px-4 py-3 text-left transition-colors border-b border-black/[0.04]"
                 onClick={() => {
                   if (view) {

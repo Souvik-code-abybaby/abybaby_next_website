@@ -16,10 +16,10 @@ import {
   Building2,
   ExternalLink,
 } from "lucide-react";
-import logo from "../../assets/images/download.webp";
+import logo from "../../../public/assets/images/download.webp";
 
 import { LOCATIONS } from "../../../public/presence/presence";
-import Image from "next/image";
+
 export default function SidePanel({ setOpen, onNavigate }) {
   function getMapSrc(lat, lng, zoom = 13) {
     return `https://maps.google.com/maps?q=${lat},${lng}&z=${zoom}&output=embed`;
