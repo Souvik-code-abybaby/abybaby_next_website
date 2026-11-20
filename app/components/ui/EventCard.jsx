@@ -6,7 +6,7 @@ import { useRouter } from "next/navigation";
 import { RegistrationModal } from "./RegistrationModal";
 import Image from "next/image";
 export default function EventCard({ event, onNavigate }) {
-  console.log(event)
+  // console.log(event)
   const router = useRouter();
   const [expanded, setExpanded] = useState(false);
   const [showRegistration, setShowRegistration] = useState(false);

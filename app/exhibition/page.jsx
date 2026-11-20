@@ -134,7 +134,7 @@ export default  function Page({ onNavigate }) {
     if (dx < 0) goNextImage();
     else goPrevImage();
   };
-  console.log(selectedExhibition);
+  // console.log(selectedExhibition);
 
   return (
     <>
