@@ -6,9 +6,13 @@ import { StoryViewer } from "./components/home/StoryViewer";
 import { clients } from "../public/home/home";
 import logo from "../public/assets/images/logo.webp";
 import { useState } from "react";
+import { useEffect } from "react";
 export default function Home() {
     const [activeSection, setActiveSection] = useState("home");
      const [activeStory, setActiveStory] = useState(null);
+       useEffect(() => {
+         window.scrollTo({ top: 0, behavior: "smooth" });
+       }, []);
   return (
     <>
       <StoriesCarousel
