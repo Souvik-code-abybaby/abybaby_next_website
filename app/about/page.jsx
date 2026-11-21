@@ -191,3 +191,10 @@ export default function Page({ onNavigate }) {
     </>
   );
 }
+// export function generateMetadata(){
+//   return {
+//     title: "About Abybaby Events | Experiential Marketing Agency India",
+//     description:
+//       "Learn about Abybaby Events — 25+ years of experience in event management, BTL activation and experiential marketing across India.",
+//   }
+// }

@@ -39,10 +39,10 @@ const dmSerif = DM_Serif_Display({
   style: ["normal", "italic"],
 });
 
-export const metadata = {
-  title: "Abybaby Events",
-  description: "Award-winning event & brand experience agency",
-};
+// export const metadata = {
+//   title: "Abybaby Events",
+//   description: "Award-winning event & brand experience agency",
+// };
 
 export default function RootLayout({ children }) {
   return (
