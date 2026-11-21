@@ -7,10 +7,10 @@ import GridCell from "../components/ui/GridCell";
 import Link from "next/link";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
-// import JsonLd from "../../components/JsonLd";
-// import { buildBreadcrumbSchema } from "../../seo/breadcrumbSchema";
-// import { buildProfileSchema } from "../../seo/profileSchema";
-// import { buildVideoSchema } from "../../seo/videoSchema";
+import JsonLd from "../components/JsonLd";
+import { buildBreadcrumbSchema } from "../seo/breadcrumbSchema";
+import { buildProfileSchema } from "../seo/profileSchema";
+import { buildVideoSchema } from "../seo/videoSchema";
 import {
   ChevronLeft,
   ChevronRight,
@@ -111,11 +111,11 @@ export default function Page({ onNavigate }) {
   function handlePdfDownload() {
     console.log("dwn pdf done");
   }
-    // const profileSchemas = buildProfileSchema(SERVICES);
-    //   const videoSchemas = buildVideoSchema(REELS_DATA);
+const profileSchemas = buildProfileSchema(SERVICES);
+const videoSchemas = buildVideoSchema(REELS_DATA);
   return (
     <>
-       {/* <JsonLd data={buildBreadcrumbSchema([
+       <JsonLd data={buildBreadcrumbSchema([
                   { name: "Profile", url: "https://abybabyevents.com/profile" }
                 ])} />
                   {profileSchemas.map((schema, i) => (
@@ -123,7 +123,7 @@ export default function Page({ onNavigate }) {
 ))}
    {videoSchemas.map((schema, i) => (   
         <JsonLd key={i} data={schema} />
-      ))} */}
+      ))}
     <div className="flex flex-col pb-12 px-4 pt-4 w-[100%] min-[1160px]:mx-50 min-[770px]:mx-16 mx-0">
       {/* ── Hero ── */}
       <Link

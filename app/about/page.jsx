@@ -10,8 +10,8 @@ import {
   BarChart2,
   Zap,
 } from "lucide-react";
-// import JsonLd from "../../components/JsonLd";
-// import { buildBreadcrumbSchema } from "../../seo/breadcrumbSchema";
+import JsonLd from "../components/JsonLd";
+import { buildBreadcrumbSchema } from "../seo/breadcrumbSchema";
 // ── Sub-components ────────────────────────────────────────────────────────────
 
 function BodyText({ children }) {
@@ -55,9 +55,9 @@ export default function Page({ onNavigate }) {
 
   return (
     <>
-         {/* <JsonLd data={buildBreadcrumbSchema([
+         <JsonLd data={buildBreadcrumbSchema([
           { name: "About", url: "https://abybabyevents.com/about" }
-        ])} /> */}
+        ])} />
     <div className="flex flex-col pb-12 px-4 pt-4 w-[100%] min-[1160px]:mx-50 min-[770px]:mx-16 mx-0">
       {/* Back button */}
       <Link

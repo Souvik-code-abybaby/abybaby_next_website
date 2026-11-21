@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { getProfileData } from "@/lib/profile";
+import { getProfileData } from "../../../lib/Profile";
 
 export const runtime = "nodejs";
 

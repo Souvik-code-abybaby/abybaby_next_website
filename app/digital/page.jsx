@@ -1,6 +1,6 @@
-'use client';
+"use client";
 import JsonLd from "../components/JsonLd";
-// import { buildBreadcrumbSchema } from "../../seo/breadcrumbSchema";
+import { buildBreadcrumbSchema } from "../seo/breadcrumbSchema";
 import { useState, useEffect, useRef, useCallback } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { ArrowRight } from "lucide-react";
@@ -8,7 +8,7 @@ import Link from "next/link";
 import Image from "next/image";
 import logo from "../../public/assets/images/logo.webp";
 import { DIGITAL_PROJECTS_ALL } from "../../public/digital/digital";
-// import { buildDigitalSchema } from "../../seo/digitalSchema";
+import { buildDigitalSchema } from "../seo/digitalSchema";
 export default function Page({ onNavigate }) {
   const [selectedProject, setSelectedProject] = useState(null);
   const [currentImage, setCurrentImage] = useState(0);
@@ -119,15 +119,15 @@ export default function Page({ onNavigate }) {
     if (dx < 0) goNextImage();
     else goPrevImage();
   };
-//   const digitalSchemas = buildDigitalSchema(DIGITAL_PROJECTS_ALL);
+const digitalSchemas = buildDigitalSchema(DIGITAL_PROJECTS_ALL);
   return (
     <>
- {/* <JsonLd data={buildBreadcrumbSchema([
+      <JsonLd data={buildBreadcrumbSchema([
   { name: "Digitals", url: "https://abybabyevents.com/digital" }
 ])} />
    {digitalSchemas.map((schema, i) => (
         <JsonLd key={i} data={schema} />  
-      ))} */}
+      ))}
       <div className="w-full min-h-screen bg-background min-[1160px]:mx-20 min-[770px]:mx-16 mx-0">
         {/* Header */}
         <div className="sticky top-0 z-10 px-4 pt-4 pb-4 bg-[color:var(--color-background,_#fff)]">
@@ -159,11 +159,11 @@ export default function Page({ onNavigate }) {
                 className="overflow-hidden rounded-2xl bg-white shadow-sm cursor-pointer border border-[#f0f0f5] min-h-[350px] "
               >
                 <div className="relative">
-                <img
-  src={imgSrc(project.image)}
-  alt={project.name}
-  className="w-full object-cover transition-transform duration-500 hover:scale-105 h-full"
-/>
+                  <img
+                    src={imgSrc(project.image)}
+                    alt={project.name}
+                    className="w-full object-cover transition-transform duration-500 hover:scale-105 h-full"
+                  />
                 </div>
               </motion.div>
             ))}
@@ -194,7 +194,7 @@ export default function Page({ onNavigate }) {
         {!hasMore && (
           <div className="flex flex-col items-center py-8 gap-2">
             <div className="rounded-full flex items-center justify-center w-12 h-12 bg-[linear-gradient(135deg,#65A30D_0%,#A3E635_100%)]">
-              <Image src={logo} alt="Krishivikas logo " loading="lazy"/>
+              <Image src={logo} alt="Krishivikas logo " loading="lazy" />
             </div>
             <p className="text-[13px] text-[#8e8e93] text-center">
               You've explored all digital projects.
@@ -234,7 +234,7 @@ export default function Page({ onNavigate }) {
               <AnimatePresence mode="wait">
                 <motion.img
                   key={currentImage}
-                    src={imgSrc(selectedProject.modalImage[currentImage])}
+                  src={imgSrc(selectedProject.modalImage[currentImage])}
                   alt={selectedProject.name}
                   initial={{ opacity: 0, scale: 1.05 }}
                   animate={{ opacity: 1, scale: 1 }}
@@ -336,11 +336,11 @@ export default function Page({ onNavigate }) {
                           : "border-white/30"
                       }`}
                     >
-                    <img
-  src={imgSrc(image)}
-  alt={selectedProject.name}
-  className="w-20 h-14 object-cover"
-/>
+                      <img
+                        src={imgSrc(image)}
+                        alt={selectedProject.name}
+                        className="w-20 h-14 object-cover"
+                      />
                     </button>
                   ))}
                 </div>

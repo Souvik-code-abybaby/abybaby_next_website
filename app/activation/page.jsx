@@ -4,6 +4,7 @@
 import { useState, useEffect, useRef, useCallback } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { ArrowRight } from "lucide-react";
+import JsonLd from "../components/JsonLd";
 import Image from "next/image";
 import logo from "../../public/assets/images/logo.webp";
 import miaCover from "../../public/assets/images/mia/mia3.webp";
@@ -32,7 +33,8 @@ import tata5 from "../../public/assets/images/arun/arun6.webp";
 import tata6 from "../../public/assets/images/arun/arun7.webp";
 import { ACTIVATIONS_ALL } from "../../public/activations/activations";
 import Link from "next/link";
-// import { buildActivationsSchema } from "../../seo/activationSchema";
+import { buildActivationsSchema } from "../seo/activationSchema";
+import { buildBreadcrumbSchema } from "../seo/breadcrumbSchema";
 // ── Skeleton for a single activation card ────────────────────────────────────
 function ActivationCardSkeleton() {
   return (
@@ -132,15 +134,17 @@ export default function Page({ onNavigate }) {
       goNextImage(); // swiped left -> next
     else goPrevImage(); // swiped right -> prev
   };
-  //  const activationSchemas = buildActivationsSchema(ACTIVATIONS_ALL);
+  const activationSchemas = buildActivationsSchema(ACTIVATIONS_ALL);
   return (
     <>
-      {/* <JsonLd data={buildBreadcrumbSchema([ */}
-      {/* { name: "Activations", url: "https://abybabyevents.com/activation" }
-])} />
+      <JsonLd
+        data={buildBreadcrumbSchema([
+          { name: "Activations", url: "https://abybabyevents.com/activation" },
+        ])}
+      />
       {activationSchemas.map((schema, i) => (
         <JsonLd key={i} data={schema} />
-      ))} */}
+      ))}
       <div className="w-full min-h-screen bg-background min-[1160px]:mx-20 min-[770px]:mx-16 mx-0">
         {/* Heading */}
         <div className="sticky top-0 z-10 px-4 pt-4 pb-3 bg-[color:var(--color-background,_#fff)]">

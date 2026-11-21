@@ -6,10 +6,10 @@ import Link from "next/link";
 import Image from "next/image";
 import { AWARDS } from "../../public/awards/awards";
 import AwardsSidebarCarousel from "../components/ui/AwardsSidebarCarousel";
-// import { buildAwardsSchema } from "../../seo/awardsSchema";
+import { buildAwardsSchema } from "../seo/awardsSchema";
 // ── Sidebar Carousel (identical mechanics to CaseStudiesView) ─────────────────
-// import JsonLd from "../../components/JsonLd";
-// import { buildBreadcrumbSchema } from "../../seo/breadcrumbSchema";
+import JsonLd from "../components/JsonLd";
+import { buildBreadcrumbSchema } from "../seo/breadcrumbSchema";
 // ── Skeleton image wrapper — shows a pulsing block until the image loads ──────
 function SkeletonImage({ src, alt, className, wrapperClassName }) {
   const [loaded, setLoaded] = useState(false);
@@ -82,19 +82,19 @@ function AwardSkeleton() {
 export default function Page({ onNavigate }) {
   const [activeId, setActiveId] = useState(1);
   const award = AWARDS.find((a) => a.id === activeId);
-//   const awardSchemas = buildAwardsSchema(AWARDS);
+const awardSchemas = buildAwardsSchema(AWARDS);
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   }, [activeId]);
 
   return (
     <>
-         {/* <JsonLd data={buildBreadcrumbSchema([
+         <JsonLd data={buildBreadcrumbSchema([
               { name: "Awards", url: "https://abybabyevents.com/awards" }
             ])} />
                  {awardSchemas.map((schema, i) => (
         <JsonLd key={i} data={schema} />
-      ))} */}
+      ))}
       {" "}
       <div className="flex flex-col pb-12 px-4 pt-4 w-[100%] min-[1160px]:mx-50 min-[770px]:mx-16 mx-0">
         {/* Back button */}

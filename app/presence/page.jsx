@@ -1,14 +1,14 @@
 'use client';
 import { useState, useRef, useEffect } from "react";
 import { motion, AnimatePresence } from "motion/react";
-// import JsonLd from "../../components/JsonLd";
-// import { buildBreadcrumbSchema } from "../../seo/breadcrumbSchema";
+import JsonLd from "../components/JsonLd";
+import { buildBreadcrumbSchema } from "../seo/breadcrumbSchema";
 import logo from "../../public/assets/images/logo.webp";
 import email from "../../public/assets/images/email.webp";
 import addressLogo from "../../public/assets/images/address_logo.webp";
 import phone from "../../public/assets/images/phone.webp";
 import { Globe, Recycle } from "lucide-react";
-// import { buildLocationsSchema } from "../../seo/locationsSchema";
+import { buildLocationsSchema } from "../seo/locationsSchema";
 import { LOCATIONS } from "../../public/presence/presence";
 import Link from "next/link";
 import Image from "next/image";
@@ -42,15 +42,15 @@ export  default function Page({ onNavigate, open, setOpen }) {
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   }, []);
-// const locationSchemas = buildLocationsSchema(LOCATIONS);
+const locationSchemas = buildLocationsSchema(LOCATIONS);
   return (
     <>
-      {/* <JsonLd data={buildBreadcrumbSchema([
+      <JsonLd data={buildBreadcrumbSchema([
               { name: "Presence", url: "https://abybabyevents.com/presence" }
             ])} />
       {locationSchemas.map((schema, i) => (
   <JsonLd key={i} data={schema} />
-))}   */}
+))}  
     <div className="flex flex-col pb-12 px-4 pt-4 w-[100%] min-[1160px]:mx-50 min-[770px]:mx-16 mx-0 ">
       {/* Back button */}
       <Link

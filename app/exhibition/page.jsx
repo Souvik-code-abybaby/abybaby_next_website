@@ -7,9 +7,9 @@ import { ArrowRight } from "lucide-react";
 import Link from "next/link";
 import { EXHIBITIONS_ALL } from "../../public/exhibition/exhibition";
 import Image from "next/image";
-// import JsonLd from "../../components/JsonLd";
-// import { buildBreadcrumbSchema } from "../../seo/breadcrumbSchema";
-// import { buildExhibitionSchema } from "../../seo/ExhibitonSchema";
+import JsonLd from "../components/JsonLd";
+import { buildBreadcrumbSchema } from "../seo/breadcrumbSchema";
+import { buildExhibitionSchema } from "../seo/ExhibitonSchema";
 // ── Skeleton for a single exhibition card ────────────────────────────────────
 function ExhibitionCardSkeleton() {
   return (
@@ -107,7 +107,7 @@ export default  function Page({ onNavigate }) {
     mq.addEventListener("change", update);
     return () => mq.removeEventListener("change", update);
   }, []);
-// const exhibitionSchemas = buildExhibitionSchema(EXHIBITIONS_ALL);
+const exhibitionSchemas = buildExhibitionSchema(EXHIBITIONS_ALL);
   // ── Modal gallery navigation ──────────────────────────────────────────────
   const goPrevImage = () => {
     if (!selectedExhibition) return;
@@ -138,12 +138,12 @@ export default  function Page({ onNavigate }) {
 
   return (
     <>
-        {/* <JsonLd data={buildBreadcrumbSchema([
+        <JsonLd data={buildBreadcrumbSchema([
           { name: "Exhibitons", url: "https://abybabyevents.com/exhibition" }
         ])} />
                 {exhibitionSchemas.map((schema, i) => (
           <JsonLd key={i} data={schema} />
-        ))} */}
+        ))}
     <div className="w-full min-h-screen bg-background min-[1160px]:mx-20 min-[770px]:mx-16 mx-0">
       {/* Heading */}
       <div className="sticky top-0 z-10 px-4 pt-4 pb-3 bg-[color:var(--color-background,_#fff)]">
